@@ -1,0 +1,21 @@
+databot_agent/agent_registry/agents_registry.json
+  s_b207f86d460425::t_30310657727794 1-39
+databot_agent/agent_registry/registry.py
+  s_b207f86d460425::t_f52826eda83ddc 1-117
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.3",
+  "base_commit_sha": "46f5b4be8a2309b5ae28579ccf4e4d2d05eead83",
+  "prompts": {},
+  "sessions": {
+    "s_b207f86d460425": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "62ff8239-223b-4b88-9804-64d270ac0421",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Neraj Kumarbabu <nerajdialpad@github.com>"
+    }
+  }
+}
