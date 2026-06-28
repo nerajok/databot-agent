@@ -1,0 +1,31 @@
+.gitignore
+  s_4147b856b97bf1::t_2a9858c7fb22aa 1-30
+databot_agent/agent_registry/agents_registry.json
+  s_b207f86d460425::t_080a02664708f4 1-39
+databot_agent/agent_registry/registry.py
+  s_b207f86d460425::t_00baf2ea22aa34 1-117
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.3",
+  "base_commit_sha": "c709bc568c9ce5a4eb2ed6c25eeb552cec02933f",
+  "prompts": {},
+  "sessions": {
+    "s_4147b856b97bf1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "85104af4-6d47-4684-a975-a6589fd57a99",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Neraj Kumarbabu <nerajdialpad@github.com>"
+    },
+    "s_b207f86d460425": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "62ff8239-223b-4b88-9804-64d270ac0421",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Neraj Kumarbabu <nerajdialpad@github.com>"
+    }
+  }
+}
