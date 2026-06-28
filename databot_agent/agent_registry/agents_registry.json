@@ -1,0 +1,39 @@
+{
+  "agents": {
+    "tableau": {
+      "type": "tableau",
+      "name": "Tableau Inspector",
+      "status": "active",
+      "capabilities": [
+        "dashboard_inspection",
+        "view_data",
+        "datasource_discovery"
+      ],
+      "credentials_env_keys": [
+        "TABLEAU_SERVER_URL",
+        "TABLEAU_TOKEN_NAME",
+        "TABLEAU_TOKEN_SECRET"
+      ],
+      "module": "databot_agent.tableau_tools.tableau_api",
+      "description": "Inspects Tableau dashboards, pulls live view data, and discovers datasource connections.",
+      "registered_at": "builtin"
+    },
+    "bigquery": {
+      "type": "bigquery",
+      "name": "BigQuery Analyst",
+      "status": "active",
+      "capabilities": [
+        "sql_query",
+        "schema_discovery",
+        "data_analysis",
+        "catalog_search"
+      ],
+      "credentials_env_keys": [
+        "GOOGLE_CLOUD_PROJECT"
+      ],
+      "module": "databot_agent.bigquery_utils.bigquery_tools",
+      "description": "Executes read-only SQL against BigQuery and discovers table schemas.",
+      "registered_at": "builtin"
+    }
+  }
+}

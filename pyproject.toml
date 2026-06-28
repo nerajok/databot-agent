@@ -1,0 +1,42 @@
+[project]
+name = "databot-agent"
+version = "0.1.0"
+description = "AI multi-source data diagnostic agent (Tableau, BigQuery, Salesforce, and more)"
+license = { text = "Apache-2.0" }
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+
+dependencies = [
+    "google-adk>=1.13.0",
+    "google-cloud-aiplatform[adk,agent-engines]>=1.118.0",
+    "google-cloud-bigquery>=3.36.0",
+    "google-cloud-logging>=3.12.0",
+    "google-genai>=1.39.1",
+    "python-dotenv>=1.1.1",
+    "requests>=2.32.0",
+    "pydantic>=2.11.9",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.2",
+    "pytest-asyncio>=1.1.0",
+    "nest-asyncio>=1.6.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = "."
+asyncio_default_fixture_loop_scope = "function"
+
+[tool.agent-starter-pack]
+example_question = "Why is this Salesforce customer not showing in our company_core BigQuery table?"
+
+[tool.agent-starter-pack.settings]
+agent_directory = "databot_agent"
+
+[build-system]
+requires = ["uv_build>=0.8.14,<0.9.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-root = ""
